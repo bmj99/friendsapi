@@ -1,24 +1,26 @@
 package com.brinn.friendsapi;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
-@Data
-@NoArgsConstructor
 @Entity
-
 public class Friend {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-    private String firstname;
-    private String lastname;
-    private String department;
-    private String email;
+
+    @Column
     private String country;
+
+    @Column
+    private String department;
+
+    @Column
+    private String email;
+
+    @Column
+    private String first_name;
+
+    @Column
+    private String last_name;
 }
