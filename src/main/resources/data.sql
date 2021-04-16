@@ -9,10 +9,6 @@ CREATE TABLE Friend (
     last_name VARCHAR(250) NOT NULL
 );
 
-INSERT INTO Friend (country, department, email, first_name, last_name) VALUES
-('Nigeria', 'Computer Science', 'kindson@gmail.com', 'Kindson', 'Munoneye'),
-('Hungary', 'Programming', 'mila@gmail.com', 'Mila', 'Nepla'),
-('USA', 'Electronics', 'helen@gmail.com', 'Helen', 'Phils'),
-('India', 'Infomatics', 'sharna@gmail.com', 'Sharna', 'Ravi'),
-('Canada', 'Security', 'omar@gmail.com', 'Omar', 'Alabi'),
-('Nigeria', 'AddDev', 'koali@gmail.com', 'Rajav', 'Kumar');
+INSERT INTO Friend VALUES(1, 'USA', 'Full Stack Web Dev', 'brinn@gmail.com', 'Brinn', 'Jones');
+INSERT INTO Friend VALUES(2, 'USA', 'Network Admin', 'andrew@gmail.com', 'Andrew', 'Jones');
+INSERT INTO Friend VALUES(3, 'USA', 'Senior Software Engineer', 'eric@gmail.com', 'Eric', 'Wadsworth');
