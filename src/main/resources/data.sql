@@ -5,8 +5,8 @@ CREATE TABLE Friend (
     country VARCHAR(250) NOT NULL,
     department VARCHAR(250) NOT NULL,
     email VARCHAR(250) NOT NULL,
-    first_name VARCHAR(250) NOT NULL,
-    last_name VARCHAR(250) NOT NULL
+    firstname VARCHAR(250) NOT NULL,
+    lastname VARCHAR(250) NOT NULL
 );
 
 INSERT INTO Friend VALUES(1, 'USA', 'Full Stack Web Dev', 'brinn@gmail.com', 'Brinn', 'Jones');
