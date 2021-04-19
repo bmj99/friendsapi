@@ -14,6 +14,7 @@ public class FriendController {
     private FriendService service;
 
     @GetMapping("/friends")
+    @ResponseStatus(HttpStatus.OK)
     public List<Friend> getFriends() {
         return service.getFriends();
     }
@@ -25,6 +26,7 @@ public class FriendController {
     }
 
     @PutMapping("/friends/{id}/edit")
+    @ResponseStatus(HttpStatus.OK)
     public void updateFriend(
             @PathVariable("id") Integer id,
             @RequestBody Friend friend) {
@@ -32,6 +34,7 @@ public class FriendController {
     }
 
     @DeleteMapping("/friends/{id}/delete")
+    @ResponseStatus(HttpStatus.OK)
     public void deleteFriend(@PathVariable("id") Integer id) {
         service.deleteFriend(id);
     }
